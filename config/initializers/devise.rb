@@ -246,6 +246,8 @@ Devise.setup do |config|
   # ==> Warden configurationNs9xr9Qx4JzErEgEvdpQrBWV
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
+   config.secret_key =' 5e85b93c6e109f59d8ee73e6c44f2d2eeb5e25748833cba004498315c98edd41d1248ae2c8f8b8862960d54c85fcbb91866e979d449e0cdd8f82266834fdecdd'
+
   #
   # config.warden do |manager|
   #   manager.intercept_401 = false

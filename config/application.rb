@@ -11,7 +11,7 @@ module ChatBizz
 
       
 
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
     config.action_mailer.perform_deliveries = true
     config.active_record.raise_in_transactional_callbacks = true
 

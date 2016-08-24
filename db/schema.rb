@@ -23,35 +23,6 @@ ActiveRecord::Schema.define(version: 20160705115207) do
     t.index ["uid"], name: "index_authentications_on_uid"
   end
 
-  create_table "blogs", force: :cascade do |t|
-    t.string   "title"
-    t.string   "author"
-    t.string   "image"
-    t.integer  "likes"
-    t.text     "body"
-    t.integer  "user_id"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-    t.integer  "flag"
-    t.integer  "views",              default: 0
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-    t.index ["user_id"], name: "index_blogs_on_user_id"
-  end
-
-  create_table "comments", force: :cascade do |t|
-    t.text     "body"
-    t.integer  "user_id"
-    t.integer  "blog_id"
-    t.integer  "pid"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["blog_id"], name: "index_comments_on_blog_id"
-    t.index ["user_id"], name: "index_comments_on_user_id"
-  end
-
   create_table "messages", force: :cascade do |t|
     t.text     "content"
     t.datetime "created_at", null: false
@@ -64,7 +35,6 @@ ActiveRecord::Schema.define(version: 20160705115207) do
     t.string   "first_name"
     t.string   "last_name"
     t.text     "outh_token"
-    t.string   "college_name"
     t.string   "avatar"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false

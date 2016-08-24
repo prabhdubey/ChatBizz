@@ -38,20 +38,15 @@ group :development do
 end
 
 group :production do
+  gem 'rails_12factor'
   gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'omniauth'
-gem 'omniauth-twitter'
 gem 'omniauth-facebook'
-gem 'omniauth-linkedin'
 gem "omniauth-google-oauth2"
 gem 'bootstrap-sass', '~> 3.3.6'	
 gem "paperclip", "~> 4.1.1"
-gem 'acts_as_commentable'
-gem 'ckeditor', '~> 4.1', '>= 4.1.6'
-
 gem 'open_uri_redirections'

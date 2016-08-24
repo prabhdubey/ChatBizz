@@ -43,6 +43,7 @@ group :production do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'figaro'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'

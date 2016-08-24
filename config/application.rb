@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module ChatBizz
   class Application < Rails::Application
+    config.assets.initialize_on_precompile = false
     config.action_mailer.perform_deliveries = true
     config.active_record.raise_in_transactional_callbacks = true
 

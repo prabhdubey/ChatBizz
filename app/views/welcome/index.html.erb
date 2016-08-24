@@ -1,0 +1,43 @@
+    <style>
+       #banner {
+             background: url(<%= image_url("back.jpg") %>) 50% fixed !important;
+        }
+    </style>    
+    <% if notice %>
+            <center>
+              <br>
+                <%if notice %>
+                       <p class="alert alert-success" role="alert"><%= notice %></p>
+                <% end %>
+             </center>      
+    <%end%>    
+    <body class="landing">
+        <div id="page-wrapper">    
+            <!-- Header -->
+                <header id="header">
+                    <h1 id="logo"><a href="index.html">ChatBizz</a></h1>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="elements.html">About</a></li>
+                            <li><%= link_to "Sign Up",new_user_session_path, class: "button special" %>
+                        </ul>
+                    </nav>
+                </header>
+                           
+
+            <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h2>Love to make Friends</h2>
+                             <p> This is the right place to make new friends.</p>
+                        </header>
+                       
+                        <span class="image"><img src="<%= image_url("box.jpg")%>" alt="" /></span>
+                    </div>
+                    <a href="#one" class="goto-next scrolly">Next</a>
+                </section>
+
+        </div>
+</body>        

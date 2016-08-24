@@ -47,6 +47,7 @@ gem 'figaro'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem "omniauth-google-oauth2"
 gem 'bootstrap-sass', '~> 3.3.6'	
 gem "paperclip", "~> 4.1.1"
 gem 'open_uri_redirections'

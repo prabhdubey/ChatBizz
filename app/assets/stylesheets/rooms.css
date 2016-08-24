@@ -1,5 +1,7 @@
-
-
+  
+ b {
+    color: #1c1d26!important;
+}
 a{
     color:#FAFDFF !important;
 }
@@ -29,10 +31,6 @@ a{
     margin-left: 60px;
 }
 
-.chat li.right .chat-body
-{
-    margin-right: 60px;
-}
 
 
 
@@ -52,7 +50,6 @@ a{
     
     height: 100%;
     width: 100%;
-    color: black;
 
 }
 
@@ -62,7 +59,6 @@ a{
 }
 
 .panel-heading {
-    background-color: #2D353C !important;
     position: fixed;
     top: 0;
     left: 0;

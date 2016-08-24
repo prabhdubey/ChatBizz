@@ -1,7 +1,5 @@
 class User < ApplicationRecord
    has_many :authentications
-   has_many :blogs
-   has_many :comments
    has_many :messages
 
    has_attached_file :avatar

@@ -29,5 +29,5 @@ production:
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: chatbizz007_production
-  username: prabh
+  username: chatbizz007
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
